@@ -79,10 +79,10 @@ sequenceDiagram
 ```mermaid
 
 sequenceDiagram
-    participant server
     participant browser
+    participant server
 
-    Note right of browser: A User submits a new node, the default submit action is prevented by Javascript code
+    Note right of browser: A User submits a new note, the default submit action is prevented by Javascript code
     Note right of browser: JavaScript Code (already fetched from server) adds the new note submitted by user to the list of notes. (Without Reload)
     Note right of browser: Javascript code sends the new note as Json Data to the server with Content Type as application/json in the Request Header
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note_spa
