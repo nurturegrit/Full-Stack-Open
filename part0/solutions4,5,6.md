@@ -6,7 +6,7 @@ sequenceDiagram
     participant browser
     participant server
 
-    Note right of browser: A User submits a Form from his browser to `post` a new_note
+    Note right of browser: A User submits a Form from their browser to `post` a new_note
     browser->>server: POST https://studies.cs.helsinki.fi/exampleapp/new_note
     activate server
     Note left of server: the new_note data is pushed to the `notes` (list of all notes) in the server (not stored in a DB)
